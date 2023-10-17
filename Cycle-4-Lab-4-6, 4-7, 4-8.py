@@ -28,22 +28,33 @@ print (allnum)
 #extract the smallest and largest number from the string & print them,
 i=0
 big = int(allnum[0])
-small = int(allnum[0]
+small = int(allnum[0])
 while i < len(allnum):
     if big < int(allnum[i]):
-        big = i
+        big = int(allnum[i])
     i += 2
-    
+print("bigest number is")
 print(big)    
+while i < len(allnum):
+    if small > int(allnum[i]):
+        small = int(allnum[i])
+    i += 2
+print("smallest number is")
+print(small)    
 #with a label (i.e smallest num given was 1). 
 #Print the product of the two numbers you have extracted, with a label (i.e. the product of the two numbers extracted was 5).
-
-
+print("the product of the two numbers is")
+print(big + small)
 #___________________________________________________
 
 4-8
 #Create a Python file named lab_4-8.py
 #Write a program that prompts a use to enter a 6 letter sequence of DNA. (a series of a,c,t,g) 
+print("please provide a 6 letter dna sequence ex:actgga")
+dna = input("")
+print(f"{dna[0]} - {dna[1]}")
+print(f"{dna[2]} - {dna[3]}")
+print(f"{dna[4]} - {dna[5]}")
 #Print out the complementary DNA sequence (a – t, c – g). 
 #You can assume all inputs are valid and lowercase
 
